@@ -13,6 +13,7 @@
 \usepackage{wrapfig}
 \usepackage{ragged2e}
 \usepackage{etoolbox}
+\usepackage{tabularx}
 
 \usepackage{array}
 \usepackage{floatrow}
@@ -21,6 +22,7 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{multirow}
+\usepackage{stackengine}
 \usepackage[T1]{fontenc}
 \usepackage{ae}
 
@@ -32,6 +34,9 @@
  % Format
  \newcommand{\RotUP}[1]{\begin{sideways}#1\end{sideways}}
 
+ \newcommand{\theHalgorithm}{\arabic{algorithm}}
+ \newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+ \newcommand{\shiftleft}[2]{\makebox[0pt][r]{\makebox[#1][l]{#2}}}
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  % Multicol Settings
@@ -278,19 +283,21 @@
  headerheight=0.13\textheight}
  % Eye Catcher
  {
-      \includegraphics[width=0.1 \linewidth]{logo_paiss}
+   \begin{tabular}{c}
+    \includegraphics[scale=0.11]{logo_aaai} \\
+   \end{tabular}
  }
  % Title
- {\sc\Huge Detecting Urban Changes with Recurrent Neural Networks from Multi-Temporal Sentinel-2 Data}
+ {\sc\Huge Modeling Electrical Motor Dynamics using Encoder-Decoder with Recurrent Skip Connection}
   % Authors
-  {Maria Papadomanolaki*, \textbf{Sagar Verma*}, Maria Vakalopoulou, Siddharth Gupta, Konstantinos Karantzalos \\
-  {\texttt{mar.papadomanolaki@gmail.com, \{sagar.verma,maria.vakalopoulou\}@centralesupelec.fr, sid@granular.ai, karank@central.ntua.gr}}}
+  {\textbf{Sagar Verma*}, Nicolas Henwood, Marc Castella, Francois Malrait, and Jean-Christophe Pesquet \\
+  }
   % University logo
   {
-   \begin{tabular}{r r}
-     \multicolumn{2}{c}{\includegraphics[height=0.07\textheight]{logo_cvn}} \\
-     \includegraphics[height=0.06\textheight]{logo_rslab} &
-     \includegraphics[height=0.06\textheight]{logo_granularai} \\
+   \begin{tabular}{c c}
+     \multicolumn{2}{c}{\includegraphics[scale=0.13]{logo_cvn}} \\
+     \includegraphics[scale=0.37]{logo_se} &
+     \includegraphics[scale=0.18]{logo_inria} \\
    \end{tabular}
   }
 
@@ -306,35 +313,23 @@
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \headerbox{Change Detection}{name=abstract,column=0,row=0,span=1}{
+   \headerbox{Modelling Complex Dynamics}{name=abstract,column=0,row=0,span=1}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- The general problem of monitoring the urban system and discerning changes that are occurring within that system that are of use to urban planners, managers, and researchers \cite{DUEKER197289}.
-
-   \begin{center}
-     \begin{tabular}{@{}c c@{}c}
-       \raisebox{-.5\height}{\includegraphics[scale=0.13]{day1}} &
-       \raisebox{-.5\height}{\includegraphics[scale=0.13]{day2}}\\
-       \vspace{1mm}
-       \textbf{Date1} & \textbf{Date2}
-     \end{tabular}
-   \end{center}
-
-
+ Electrical motor dynamics modeling relies on physics-based approach. Dynamics are dependent on several physical quantities and operating conditions. Sensors and estimators used for measuring these quantities are not accurate. This makes controller design and monitoring a hard problem.
    }
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \headerbox{Problem Statement}{name=contributions,column=0,below=abstract}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  We explore the feasibility of modeling the dynamics of an electrical motor by following a data-driven approach, which uses only its inputs and outputs and does not make any assumption on its internal behaviour.
 
-     Using multidate Sentinel-2 images to effectively learn urban changes while minimizing errors due to seasonal changes and clouds.
 
      \begin{center}
-         \raisebox{-.5\height}{\includegraphics[scale=0.2]{cloud_shadows}} \\
-         \vspace{1mm}
-         \textbf{Clouds \& Shadows} \\
-         \vspace{1.5mm}
-         \raisebox{-.5\height}{\includegraphics[scale=0.2]{farms}}\\
-         \vspace{1mm}
-         \textbf{Vegetation \& Farms} \\
+        \begin{tabular}{c c}
+         \includegraphics[scale=0.25]{sim} &
+          \includegraphics[scale=0.25]{lm45_torquesteps} \\
+         \textbf{Simulated sample} &
+         \textbf{Real world sample} \\
+         \end{tabular}
      \end{center}
 
  }
@@ -343,12 +338,25 @@
    \headerbox{Related Work}{name=relatedwork,column=0,below=contributions, span=1}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \begin{itemize}
-    \item Review Article Digital Change Detection Techniques using Remotely-Sensed Data \cite{singh1989}.
+    \item Physics of electrical motors and controller design \cite{Sylvester1987,Siskind1978cpts}.
     % \item Urban Change Detection in SAR Images by Interactive Learning \cite{saux2013}.
-    \item Continuous Change Detection and Classification of Land Cover using all Available Landsat Data \cite{zhu2014}.
-    \item Learning Spectral-Spatial-Temporal Features via a Recurrent Neural Network for Change Detection in Multispectral Imagery \cite{mou2019}.
-    \item Urban Change Detection for Multispectral Earth Observation using Convolutional Neural Networks \cite{daudt2018urban}.
-    \item Fully Convolutional Siamese Networks for Change Detection \cite{daudt2018fully}.
+    \item State space model of an induction motor \cite{jadot2009induct}.
+    \item Electrical motor dynamics modeling using analytical mechanics \cite{jebai2014cdc}.
+    \item Competetive performance of CNNs on sequential tasks \cite{bai2018arxiv}.
+    \item Independent Recurrent Neural Network \cite{li2018indrnn}.
+   \end{itemize}
+
+ }
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   \headerbox{Dataset}{name=dataset,column=0,below=relatedwork, span=1}{
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   \begin{itemize}
+      \item 4-kilowatt induction motor
+      \item Acquisition rate: 250 Hz
+      \item Seven quantities $i_d, i_q, u_d, u_q,, \omega_r, \omega_s, \tau_{em}$
+      \item Simulate data: 100 hours, training: 70\% and validation: 30 \%
+      \item Raw data: 1207 seconds, no $\omega_s$, 10 operating conditions, training: 20\%, and testing: 80\%
    \end{itemize}
 
  }
@@ -358,50 +366,107 @@
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  \begin{center}
-      \includegraphics[scale=0.25]{arch_full}
+      \includegraphics[scale=0.22]{encoder_decoder}
   \end{center}
 
  }
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \headerbox{Qualitative Evaluation}{name=results,column=1,below=architecture,span=2}{
+   \headerbox{Results}{name=results,column=1,below=architecture,span=2}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \setlength{\tabcolsep}{8pt}
 
   \begin{center}
-   \begin{tabular}{c}
-     \includegraphics[scale=0.25]{qual} \\
+
+  \begin{tabular}{c c c c c c}
+      \toprule
+        \textbf{Model} & \textbf{Window Size} & \textbf{Parameters} &  \textbf{MAE} & \textbf{SMAPE} & \boldmath{$R^2$} \\
+       \midrule
+       \textbf{Feed-Forward} & 20 & 1118209 & 78.91 & 8.53\% & -0.39 \\
+       \textbf{RNN} & 150 & 12001 & 78.26 & 7.76\% & -0.35 \\
+       \textbf{LSTM} & 100 & 21889 & 79.58 & 6.29\% & -0.11 \\
+       \textbf{CNN} & 100 & 650049 & 79.69 & 6.13\% & -0.14 \\
+       \midrule
+       \textbf{Encoder-Decoder} & 100  &  1096385 & 81.21 & 4.57\% & 0.29 \\
+       \textbf{Skip} & 100  &  364801 & 28.96 & 3.71\% & 0.42 \\
+       \textbf{RNN-Skip} & 100  &  638145 & 28.18 & 3.42\% & 0.43 \\
+       \textbf{BiRNN-Skip} & 100  &  967105 & 27.96 & 3.31\% & 0.41 \\
+       \textbf{DiagBiRNN-Skip} & 100  &  618465 & \textbf{26.88} & \textbf{1.09}\% & \textbf{0.95} \\
+       \bottomrule
     \end{tabular}
+    \\
+    Results for the benchmark and the proposed model variants obtained on the simulated validation set.
+    \vspace{0.5em}
+
+    \begin{tabular}{c c c}
+       \stackunder[2.5pt]{\includegraphics[scale=0.23]{tv_vs_mse_sc_smape_curr1.pdf}}{(a) Current $i_d$}
+     \llap{\shiftleft{4.0cm}{\raisebox{2.0cm}{%  move next graphics to top right corner
+     \includegraphics[scale=0.35]{tv_mse_legend.pdf}%
+       }}}
+     \stackunder[2.5pt]{\includegraphics[scale=0.23]{tv_vs_mse_sc_smape_curr2.pdf}}{(b) Current $i_q$}
+     \llap{\shiftleft{4.0cm}{\raisebox{2.0cm}{%  move next graphics to top right corner
+     \includegraphics[scale=0.35]{tv_mse_legend.pdf}%
+       }}}
+     \stackunder[2.5pt]{\includegraphics[scale=0.23]{tv_vs_mse_sc_smape_torque.pdf}}{(c) Torque $\tau_{em}$}
+      \llap{\shiftleft{4.0cm}{\raisebox{2.0cm}{%  move next graphics to top right corner
+     \includegraphics[scale=0.35]{tv_mse_legend.pdf}%
+       }}}
+
+       \end{tabular}
+       \\
+       Comparison of simulated and fine-tuned model using SMAPE vs Signal Complexity graph. \\
+       \vspace{0.5em}
+
+
+    \begin{tabular}{c c c}
+    \stackunder[2.5pt]{\includegraphics[scale=0.25]{res_sim_curr1.pdf}}{(a) Current $i_d$} &
+      \stackunder[2.5pt]{\includegraphics[scale=0.25]{res_sim_curr2.pdf}}{(b) Current $i_q$} &
+      \stackunder[2.5pt]{\includegraphics[scale=0.25]{res_sim_torque.pdf}}{(c) Torque $\tau_{em}$}
+    \end{tabular}
+      Predicted result of one of the experiments from test set.
+
     \end{center}
-
-
  }
 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   \headerbox{DiagRNN and TV-Weight MSE}{name=eqns,column=3,row=0}{
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{small}
+\begin{equation}
+    h_t = \text{tanh}(w \odot x_t + u \odot h_{t-1} + b)
+\end{equation}
+where $w \in \mathbb{R}^M$, $u \in \mathbb{R}^M$, and $b \in \mathbb{R}^M$ are input weights.
+ \vspace{0.5em}
+ \begin{equation}
+ \mathcal{L}_{\text{TV-WeightMSE}} = \frac{1}{N}\sum_{i=1}^{N}\sum_{t=1}^{T-1} |y^i_t - y^i_{t+1}| \frac{1}{T}\sum^{T}_{t=1}(y^i_t - \hat{y^i_t})^2
+\end{equation}
+where $y^i_t$ and $\hat{y^i_t}$ are the values of output and predicted sample $i$ at time-step $t$, respectively. $N$ is the number of training samples where each sample is of duration $T$.
+\end{small}
+
+   }
+
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \headerbox{Quantitative Results}{name=results2,column=3,row=0}{
+    \headerbox{Contributions}{name=contrib,column=3,row=0,below=eqns}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           \begin{center}
-            \includegraphics[scale=0.15]{results} \\
-          \end{center}
+  \centering
+  \begin{small}
+  \begin{itemize}
+    \item This is one of the first works addressing the problem of learning nonlinear dynamics of electrical motors from recorded time-series data.
+    \item We propose a new Encoder-Decoder architecture to learn time-series relationship between different electrical quantities.
+    \item We validate our methodology on two datasets; a large dataset of simulated electrical motor operations and a small dataset of sensor data recorded from the real-world operations of electrical motors.
+    \item We propose a novel loss function that uses fast variations present in the electrical motor signals to avoid model bias.
+    \item We analyse the capability of the proposed method by using a new analysis technique and we demonstrate the transfer learning capability of our approach.
+\end{itemize}
+  \end{small}
+  \end{center}
 
-    \footnotesize\textbf{ Quantitative evaluation of the proposed framework.}
+
 
     }
 
-
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \headerbox{Future Work}{name=future,column=3,below=results2}{
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-      \textbf{Big change detection:} 100+ cities, 10000+ polygons, Multi-task , Multi-resolution, Multi-date
-
-      \begin{center}
-        \includegraphics[scale=0.15]{future} \\
-      \end{center}
-
-
-        }
 
 
  % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -418,7 +483,7 @@
 
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \headerbox{References}{name=references,column=3,below=future}{
+    \headerbox{References}{name=references,column=3,below=contrib}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -430,7 +495,7 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \headerbox{Acknowledgement}{name=ack,column=3,below=references,above=bottom}{
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \tiny This work has been done at Universit\'e Paris-Saclay, CentraleSup\'elec, Inria, Centre de Vision Num\'erique, 91190, Gif-sur-Yvette, France in collaboration with Remote Sensing Lab, National Technical University of Athens, Greece, and Granular AI, Boston, MA, USA. We thank all our collaborators.
+    \tiny This work has been done at Universit\'e Paris-Saclay, CentraleSup\'elec, Inria, Centre de Vision Num\'erique, 91190, Gif-sur-Yvette, France in collaboration with Schneider Toshiba Inverter Europe, 33 Rue Andr\'e Blanchet, 27120 Pacy-sur-Eure.
 
     }
 

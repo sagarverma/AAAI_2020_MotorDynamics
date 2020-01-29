@@ -1,40 +1,38 @@
 \begin{thebibliography}{1}
 
-\bibitem{DUEKER197289}
-Kenneth~J Dueker and Frank~E Horton,
-\newblock ``Urban-change detection systems: Remote-sensing inputs,''
-\newblock {\em Photogrammetria}, vol. 28, no. 3, pp. 89 -- 106, 1972.
+\bibitem{Sylvester1987}
+S.~J. Campbell,
+\newblock {\em Solid-State AC Motor Controls},
+\newblock 1987.
 
-\bibitem{singh1989}
-Ashbindu Singh,
-\newblock ``Review article digital change detection techniques using
-  remotely-sensed data,''
-\newblock {\em International Journal of Remote Sensing}, vol. 10, no. 6, pp.
-  989--1003, 1989.
+\bibitem{Siskind1978cpts}
+C.~S. Sisking,
+\newblock {\em Electrical Control Systems in Industry},
+\newblock 1978.
 
-\bibitem{zhu2014}
-Zhe Zhu and Curtis~E. Woodcock,
-\newblock ``Continuous change detection and classification of land cover using
-  all available landsat data,''
-\newblock {\em Remote Sensing of Environment}, vol. 144, pp. 152 -- 171, 2014.
+\bibitem{jadot2009induct}
+F.~{Jadot}, F.~{Malrait}, J.~{Moreno-Valenzuela}, and R.~{Sepulchre},
+\newblock ``Adaptive regulation of vector-controlled induction motors,''
+\newblock {\em IEEE Transactions on Control Systems Technology}, vol. 17, no.
+  3, pp. 646--657, May 2009.
 
-\bibitem{mou2019}
-L.~{Mou}, L.~{Bruzzone}, and X.~X. {Zhu},
-\newblock ``Learning spectral-spatial-temporal features via a recurrent
-  convolutional neural network for change detection in multispectral imagery,''
-\newblock {\em Transactions on Geoscience and Remote Sensing}, vol. 57, no. 2,
-  pp. 924--935, 2019.
+\bibitem{jebai2014cdc}
+A.~K. {Jebai}, P.~{Combes}, F.~{Malrait}, P.~{Martin}, and P.~{Rouchon},
+\newblock ``Energy-based modeling of electric motors,''
+\newblock in {\em 53rd IEEE Conference on Decision and Control}, Dec 2014, pp.
+  6009--6016.
 
-\bibitem{daudt2018urban}
-R.~{Caye Daudt}, B.~{Le Saux}, A.~Boulch, and Y.~Gousseau,
-\newblock ``Urban change detection for multispectral earth observation using
-  convolutional neural networks,''
-\newblock in {\em International Geoscience and Remote Sensing Symposium}, July
-  2018.
+\bibitem{bai2018arxiv}
+Shaojie Bai, J.~Zico Kolter, and Vladlen Koltun,
+\newblock ``An empirical evaluation of generic convolutional and recurrent
+  networks for sequence modeling,''
+\newblock {\em CoRR}, vol. abs/1803.01271, 2018.
 
-\bibitem{daudt2018fully}
-R.~{Caye Daudt}, B.~{Le Saux}, and A.~Boulch,
-\newblock ``Fully convolutional siamese networks for change detection,''
-\newblock in {\em International Conference on Image Processing}, October 2018.
+\bibitem{li2018indrnn}
+S.~{Li}, W.~{Li}, C.~{Cook}, C.~{Zhu}, and Y.~{Gao},
+\newblock ``Independently recurrent neural network ({IndRNN}): Building a
+  longer and deeper {RNN},''
+\newblock in {\em Computer Vision and Pattern Recognition}, June 2018, pp.
+  5457--5466.
 
 \end{thebibliography}
