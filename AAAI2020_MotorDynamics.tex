@@ -14,6 +14,7 @@
 \usepackage{ragged2e}
 \usepackage{etoolbox}
 \usepackage{tabularx}
+\usepackage{xcolor}
 
 \usepackage{array}
 \usepackage{floatrow}
@@ -37,6 +38,26 @@
  \newcommand{\theHalgorithm}{\arabic{algorithm}}
  \newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
  \newcommand{\shiftleft}[2]{\makebox[0pt][r]{\makebox[#1][l]{#2}}}
+
+\definecolor{light-gray1}{gray}{0.95}
+\definecolor{light-gray2}{gray}{0.85}
+
+\definecolor{imperialblue}{RGB}{0,62,116}
+
+
+%% QR code
+\newcommand{\qrcode}[3]{
+\begin{minipage}[c]{0.30\textwidth}
+\includegraphics[width=\textwidth]{#1}
+\end{minipage}%
+\begin{minipage}[c]{0.12\textwidth}
+\hfill
+\includegraphics[height=0.85\textwidth]{#2}
+\end{minipage}%
+\begin{minipage}[c]{0.50\textwidth}
+#3
+\end{minipage}%
+}
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  % Multicol Settings
@@ -358,7 +379,6 @@
       \item Simulated data: 100 hours, training: 70\% and validation: 30\%
       \item Raw data: 1207 seconds, no $\omega_s$, 10 operating conditions, training: 20\%, and testing: 80\%
    \end{itemize}
-
  }
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -431,19 +451,33 @@
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \headerbox{DiagRNN and TV-Weight MSE}{name=eqns,column=3,row=0}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{center}
+ \fboxsep0pt
+ \colorbox{light-gray2}{\begin{minipage}{8cm}
 
 \begin{small}
 \begin{equation}
     h_t = \text{tanh}(w \odot x_t + u \odot h_{t-1} + b)
 \end{equation}
 where $w \in \mathbb{R}^M$, $u \in \mathbb{R}^M$, and $b \in \mathbb{R}^M$ are input weights.
- \vspace{0.5em}
+\end{small}
+\end{minipage}}
+\end{center}
+
+ \vspace{-1.5em}
+
+ \begin{center}
+ \fboxsep0pt
+ \colorbox{light-gray1}{\begin{minipage}{8cm}
+ \begin{small}
  \begin{equation}
  \mathcal{L}_{\text{TV-WeightMSE}} = \frac{1}{N}\sum_{i=1}^{N}\sum_{t=1}^{T-1} |y^i_t - y^i_{t+1}| \frac{1}{T}\sum^{T}_{t=1}(y^i_t - \hat{y^i_t})^2
 \end{equation}
 where $y^i_t$ and $\hat{y^i_t}$ are the values of output and predicted sample $i$ at time-step $t$, respectively. $N$ is the number of training samples where each sample is of duration $T$.
 \end{small}
-
+\end{minipage}}
+\end{center}
+ \vspace{-1.5em}
    }
 
 
@@ -454,17 +488,24 @@ where $y^i_t$ and $\hat{y^i_t}$ are the values of output and predicted sample $i
   \centering
   \begin{small}
   \begin{itemize}
-    \item This is one of the first work addressing the problem of learning nonlinear dynamics of electrical motors from recorded time-series data.
-    \item We propose a new Encoder-Decoder architecture to learn time-series relationship between different electrical quantities.
-    \item We validate our methodology on two datasets; a large dataset of simulated electrical motor operations and a small dataset of sensor data recorded from the real-world operations of electrical motors.
-    \item We propose a novel loss function that uses fast variations present in the electrical motor signals to avoid model bias.
-    \item We analyse the capability of the proposed method by using a new analysis technique and we demonstrate the transfer learning capability of our approach.
+    \item New Encoder-Decoder architecture to learn time-series relationship between different electrical quantities.
+    \item Two datasets; a large dataset of simulated electrical motor operations and a small dataset of sensor data recorded from the real-world operations of electrical motors.
+    \item A novel loss function that uses fast variations present in the electrical motor signals to avoid model bias.
+    % \item We analyse the capability of the proposed method by using a new analysis technique and we demonstrate the transfer learning capability of our approach.
 \end{itemize}
   \end{small}
   \end{center}
-
-
-
+\vspace{-2.5em}
+\begin{center}
+\fboxsep0pt
+\colorbox{light-gray1}{\begin{minipage}{8cm}
+\qrcode{qr.png}{smartphone.png}{
+\textbf{Take a picture} to
+\\download the full paper
+}
+\end{minipage}}
+\end{center}
+\vspace{-1.5em}
     }
 
 
@@ -496,6 +537,8 @@ where $y^i_t$ and $\hat{y^i_t}$ are the values of output and predicted sample $i
       \headerbox{Acknowledgement}{name=ack,column=3,below=references,above=bottom}{
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \tiny This work has been done at Universit\'e Paris-Saclay, CentraleSup\'elec, Inria, Centre de Vision Num\'erique, 91190, Gif-sur-Yvette, France in collaboration with Schneider Toshiba Inverter Europe, 33 Rue Andr\'e Blanchet, 27120 Pacy-sur-Eure.
+
+    Contact: \textbf{*sagar.verma@centralesupelec.fr}
 
     }
 

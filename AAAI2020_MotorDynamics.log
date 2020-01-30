@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.4)  29 JAN 2020 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.4)  30 JAN 2020 15:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -849,18 +849,18 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 (./AAAI2020_MotorDynamics.aux)
 \openout1 = `AAAI2020_MotorDynamics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 261.
-LaTeX Font Info:    ... okay on input line 261.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 261.
-LaTeX Font Info:    ... okay on input line 261.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 261.
-LaTeX Font Info:    ... okay on input line 261.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 261.
-LaTeX Font Info:    ... okay on input line 261.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 261.
-LaTeX Font Info:    ... okay on input line 261.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 261.
-LaTeX Font Info:    ... okay on input line 261.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 282.
+LaTeX Font Info:    ... okay on input line 282.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 282.
+LaTeX Font Info:    ... okay on input line 282.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 282.
+LaTeX Font Info:    ... okay on input line 282.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 282.
+LaTeX Font Info:    ... okay on input line 282.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 282.
+LaTeX Font Info:    ... okay on input line 282.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 282.
+LaTeX Font Info:    ... okay on input line 282.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -963,20 +963,20 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 261.
+LaTeX Info: Redefining \selectfont on input line 282.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 302.
+LaTeX Font Info:    Try loading font information for U+msa on input line 323.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 302.
+LaTeX Font Info:    Try loading font information for U+msb on input line 323.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 302.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 323.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
@@ -985,25 +985,25 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 <images/logo_aaai.jpg, id=29, 1336.995pt x 526.96875pt>
 File: images/logo_aaai.jpg Graphic file (type jpg)
 <use images/logo_aaai.jpg>
-Package pdftex.def Info: images/logo_aaai.jpg  used on input line 302.
+Package pdftex.def Info: images/logo_aaai.jpg  used on input line 323.
 (pdftex.def)             Requested size: 147.0699pt x 57.96674pt.
 <images/logo_cvn.png, id=30, 1027.58907pt x 299.61937pt>
 File: images/logo_cvn.png Graphic file (type png)
 <use images/logo_cvn.png>
-Package pdftex.def Info: images/logo_cvn.png  used on input line 302.
+Package pdftex.def Info: images/logo_cvn.png  used on input line 323.
 (pdftex.def)             Requested size: 133.59126pt x 38.95187pt.
 <images/logo_se.png, id=32, 189.70876pt x 57.21375pt>
 File: images/logo_se.png Graphic file (type png)
 <use images/logo_se.png>
-Package pdftex.def Info: images/logo_se.png  used on input line 302.
+Package pdftex.def Info: images/logo_se.png  used on input line 323.
 (pdftex.def)             Requested size: 70.19113pt x 21.16875pt.
 <images/logo_inria.jpg, id=33, 472.4049pt x 197.0562pt>
 File: images/logo_inria.jpg Graphic file (type jpg)
 <use images/logo_inria.jpg>
-Package pdftex.def Info: images/logo_inria.jpg  used on input line 302.
+Package pdftex.def Info: images/logo_inria.jpg  used on input line 323.
 (pdftex.def)             Requested size: 85.0292pt x 35.46858pt.
 
-Underfull \hbox (badness 3895) in paragraph at lines 319--319
+Underfull \hbox (badness 3895) in paragraph at lines 340--340
 []\T1/aer/m/n/10 Electrical mo-tor dy-nam-ics mod-el-ing re-lies on
  []
 
@@ -1013,23 +1013,23 @@ Missing character: There is no ; in font nullfont!
 <images/sim.pdf, id=34, 398.33504pt x 207.26842pt>
 File: images/sim.pdf Graphic file (type pdf)
 <use images/sim.pdf>
-Package pdftex.def Info: images/sim.pdf  used on input line 335.
+Package pdftex.def Info: images/sim.pdf  used on input line 356.
 (pdftex.def)             Requested size: 99.58351pt x 51.81697pt.
 <images/lm45_torquesteps.pdf, id=35, 391.54404pt x 202.6496pt>
 File: images/lm45_torquesteps.pdf Graphic file (type pdf)
 <use images/lm45_torquesteps.pdf>
-Package pdftex.def Info: images/lm45_torquesteps.pdf  used on input line 335.
+Package pdftex.def Info: images/lm45_torquesteps.pdf  used on input line 356.
 (pdftex.def)             Requested size: 97.88576pt x 50.66226pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 349.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 370.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 349.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 370.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1039,7 +1039,7 @@ Missing character: There is no ; in font nullfont!
 <images/encoder_decoder.pdf, id=36, 1662.21pt x 794.97pt>
 File: images/encoder_decoder.pdf Graphic file (type pdf)
 <use images/encoder_decoder.pdf>
-Package pdftex.def Info: images/encoder_decoder.pdf  used on input line 372.
+Package pdftex.def Info: images/encoder_decoder.pdf  used on input line 392.
 (pdftex.def)             Requested size: 365.68733pt x 174.89394pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1048,87 +1048,116 @@ Missing character: There is no ; in font nullfont!
 File: images/tv_vs_mse_sc_smape_curr1.pdf Graphic file (type pdf)
 <use images/tv_vs_mse_sc_smape_curr1.pdf>
 Package pdftex.def Info: images/tv_vs_mse_sc_smape_curr1.pdf  used on input lin
-e 429.
+e 449.
 (pdftex.def)             Requested size: 125.06221pt x 76.33862pt.
 File: images/tv_vs_mse_sc_smape_curr1.pdf Graphic file (type pdf)
 <use images/tv_vs_mse_sc_smape_curr1.pdf>
 Package pdftex.def Info: images/tv_vs_mse_sc_smape_curr1.pdf  used on input lin
-e 429.
+e 449.
 (pdftex.def)             Requested size: 125.06221pt x 76.33862pt.
 <images/tv_mse_legend.pdf, id=38, 177.0615pt x 39.7485pt>
 File: images/tv_mse_legend.pdf Graphic file (type pdf)
 <use images/tv_mse_legend.pdf>
-Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 429.
+Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 449.
 (pdftex.def)             Requested size: 61.97244pt x 13.91217pt.
 <images/tv_vs_mse_sc_smape_curr2.pdf, id=39, 537.50145pt x 331.9141pt>
 File: images/tv_vs_mse_sc_smape_curr2.pdf Graphic file (type pdf)
 <use images/tv_vs_mse_sc_smape_curr2.pdf>
 Package pdftex.def Info: images/tv_vs_mse_sc_smape_curr2.pdf  used on input lin
-e 429.
+e 449.
 (pdftex.def)             Requested size: 123.62273pt x 76.33862pt.
 File: images/tv_vs_mse_sc_smape_curr2.pdf Graphic file (type pdf)
 <use images/tv_vs_mse_sc_smape_curr2.pdf>
 Package pdftex.def Info: images/tv_vs_mse_sc_smape_curr2.pdf  used on input lin
-e 429.
+e 449.
 (pdftex.def)             Requested size: 123.62273pt x 76.33862pt.
 File: images/tv_mse_legend.pdf Graphic file (type pdf)
 <use images/tv_mse_legend.pdf>
-Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 429.
+Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 449.
 (pdftex.def)             Requested size: 61.97244pt x 13.91217pt.
 <images/tv_vs_mse_sc_smape_torque.pdf, id=40, 547.43687pt x 331.9141pt>
 File: images/tv_vs_mse_sc_smape_torque.pdf Graphic file (type pdf)
 <use images/tv_vs_mse_sc_smape_torque.pdf>
 Package pdftex.def Info: images/tv_vs_mse_sc_smape_torque.pdf  used on input li
-ne 429.
+ne 449.
 (pdftex.def)             Requested size: 125.90782pt x 76.33862pt.
 File: images/tv_vs_mse_sc_smape_torque.pdf Graphic file (type pdf)
 <use images/tv_vs_mse_sc_smape_torque.pdf>
 Package pdftex.def Info: images/tv_vs_mse_sc_smape_torque.pdf  used on input li
-ne 429.
+ne 449.
 (pdftex.def)             Requested size: 125.90782pt x 76.33862pt.
 File: images/tv_mse_legend.pdf Graphic file (type pdf)
 <use images/tv_mse_legend.pdf>
-Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 429.
+Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 449.
 (pdftex.def)             Requested size: 61.97244pt x 13.91217pt.
 <images/res_sim_curr1.pdf, id=41, 494.10535pt x 314.56897pt>
 File: images/res_sim_curr1.pdf Graphic file (type pdf)
 <use images/res_sim_curr1.pdf>
-Package pdftex.def Info: images/res_sim_curr1.pdf  used on input line 429.
+Package pdftex.def Info: images/res_sim_curr1.pdf  used on input line 449.
 (pdftex.def)             Requested size: 123.52603pt x 78.64204pt.
 File: images/res_sim_curr1.pdf Graphic file (type pdf)
 <use images/res_sim_curr1.pdf>
-Package pdftex.def Info: images/res_sim_curr1.pdf  used on input line 429.
+Package pdftex.def Info: images/res_sim_curr1.pdf  used on input line 449.
 (pdftex.def)             Requested size: 123.52603pt x 78.64204pt.
 <images/res_sim_curr2.pdf, id=42, 505.88373pt x 314.56897pt>
 File: images/res_sim_curr2.pdf Graphic file (type pdf)
 <use images/res_sim_curr2.pdf>
-Package pdftex.def Info: images/res_sim_curr2.pdf  used on input line 429.
+Package pdftex.def Info: images/res_sim_curr2.pdf  used on input line 449.
 (pdftex.def)             Requested size: 126.47061pt x 78.64204pt.
 File: images/res_sim_curr2.pdf Graphic file (type pdf)
 <use images/res_sim_curr2.pdf>
-Package pdftex.def Info: images/res_sim_curr2.pdf  used on input line 429.
+Package pdftex.def Info: images/res_sim_curr2.pdf  used on input line 449.
 (pdftex.def)             Requested size: 126.47061pt x 78.64204pt.
 <images/res_sim_torque.pdf, id=43, 505.88373pt x 314.56897pt>
 File: images/res_sim_torque.pdf Graphic file (type pdf)
 <use images/res_sim_torque.pdf>
-Package pdftex.def Info: images/res_sim_torque.pdf  used on input line 429.
+Package pdftex.def Info: images/res_sim_torque.pdf  used on input line 449.
 (pdftex.def)             Requested size: 126.47061pt x 78.64204pt.
 File: images/res_sim_torque.pdf Graphic file (type pdf)
 <use images/res_sim_torque.pdf>
-Package pdftex.def Info: images/res_sim_torque.pdf  used on input line 429.
+Package pdftex.def Info: images/res_sim_torque.pdf  used on input line 449.
 (pdftex.def)             Requested size: 126.47061pt x 78.64204pt.
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 468.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
+Overfull \hbox (2.13565pt too wide) in paragraph at lines 481--481
+ [][][][][][] 
+ []
+
+
+Overfull \hbox (2.13565pt too wide) in paragraph at lines 481--481
+ [][][][][][] 
+ []
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 509.
+
+Underfull \hbox (badness 2181) in paragraph at lines 509--509
+\T1/aer/m/n/9 series re-la-tion-ship be-tween dif-fer-ent elec-tri-cal
+ []
+
+<images/qr.png, id=44, 301.125pt x 301.125pt>
+File: images/qr.png Graphic file (type png)
+<use images/qr.png>
+Package pdftex.def Info: images/qr.png  used on input line 509.
+(pdftex.def)             Requested size: 68.2873pt x 68.28778pt.
+<images/smartphone.png, id=45, 385.44pt x 385.44pt>
+File: images/smartphone.png Graphic file (type png)
+<use images/smartphone.png>
+Package pdftex.def Info: images/smartphone.png  used on input line 509.
+(pdftex.def)             Requested size: 23.21361pt x 23.21666pt.
+
+Overfull \hbox (2.13565pt too wide) in paragraph at lines 509--509
+ [][][][][][] 
+ []
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 (./AAAI2020_MotorDynamics.bbl)
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1176,38 +1205,40 @@ iple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./images/res_sim_torque.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] (./AAAI2020_MotorDynamics.aux) ) 
+> <./images/qr.png> <./images/smartphone.png>] (./AAAI2020_MotorDynamics.aux) )
+ 
 Here is how much of TeX's memory you used:
- 19616 strings out of 494923
- 378840 string characters out of 6180743
- 809980 words of memory out of 5000000
- 22451 multiletter control sequences out of 15000+600000
- 43602 words of font info for 96 fonts, out of 8000000 for 9000
+ 19636 strings out of 494923
+ 379142 string characters out of 6180743
+ 811733 words of memory out of 5000000
+ 22464 multiletter control sequences out of 15000+600000
+ 46444 words of font info for 101 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,20n,92p,808b,962s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/c
-mex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on AAAI2020_MotorDynamics.pdf (1 page, 2446636 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on AAAI2020_MotorDynamics.pdf (1 page, 2464166 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
+ 510 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
