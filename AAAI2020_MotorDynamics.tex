@@ -313,9 +313,9 @@
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \headerbox{Modelling Complex Dynamics}{name=abstract,column=0,row=0,span=1}{
+   \headerbox{Modeling Complex Dynamics}{name=abstract,column=0,row=0,span=1}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- Electrical motor dynamics modeling relies on physics-based approach. Dynamics are dependent on several physical quantities and operating conditions. Sensors and estimators used for measuring these quantities are not accurate. This makes controller design and monitoring a hard problem.
+ Electrical motor dynamics modeling relies on physics-based approach. Dynamics are dependent on several physical quantities and operating conditions. Sensors and estimators used for measuring these quantities comes with inherent noise. This makes controller design and monitoring a challenging problem.
    }
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \headerbox{Problem Statement}{name=contributions,column=0,below=abstract}{
@@ -352,10 +352,10 @@
    \headerbox{Dataset}{name=dataset,column=0,below=relatedwork, span=1}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \begin{itemize}
-      \item 4-kilowatt induction motor
+      \item 4 kW induction motor
       \item Acquisition rate: 250 Hz
-      \item Seven quantities $i_d, i_q, u_d, u_q,, \omega_r, \omega_s, \tau_{em}$
-      \item Simulate data: 100 hours, training: 70\% and validation: 30 \%
+      \item Seven quantities $i_d, i_q, u_d, u_q, \omega_r, \omega_s, \tau_{em}$
+      \item Simulated data: 100 hours, training: 70\% and validation: 30\%
       \item Raw data: 1207 seconds, no $\omega_s$, 10 operating conditions, training: 20\%, and testing: 80\%
    \end{itemize}
 
