@@ -15,6 +15,7 @@
 \usepackage{etoolbox}
 \usepackage{tabularx}
 \usepackage{xcolor}
+\usepackage{enumitem}
 
 \usepackage{array}
 \usepackage{floatrow}
@@ -47,18 +48,19 @@
 
 %% QR code
 \newcommand{\qrcode}[3]{
-\begin{minipage}[c]{0.30\textwidth}
-\includegraphics[width=\textwidth]{#1}
+\begin{minipage}[c]{0.17\textwidth}
+\includegraphics[scale=0.09]{#1}
 \end{minipage}%
-\begin{minipage}[c]{0.12\textwidth}
+\begin{minipage}[c]{0.1\textwidth}
 \hfill
-\includegraphics[height=0.85\textwidth]{#2}
+\includegraphics[height=1\textwidth]{#2}
 \end{minipage}%
-\begin{minipage}[c]{0.50\textwidth}
-#3
+\begin{minipage}[l]{0.8\textwidth}
+\footnotesize{#3}
 \end{minipage}%
 }
 
+\setlist{leftmargin=4mm}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  % Multicol Settings
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -305,13 +307,15 @@
  % Eye Catcher
  {
    \begin{tabular}{c}
-    \includegraphics[scale=0.11]{logo_aaai} \\
+    \includegraphics[scale=0.45]{logo-ups} \\
    \end{tabular}
  }
  % Title
  {\sc\Huge Modeling Electrical Motor Dynamics using Encoder-Decoder with Recurrent Skip Connection}
   % Authors
-  {\textbf{Sagar Verma*}, Nicolas Henwood, Marc Castella, Francois Malrait, and Jean-Christophe Pesquet \\
+  {\textbf{Sagar Verma\textsuperscript{*1,2}}, Nicolas Henwood\textsuperscript{2}, Marc Castella\textsuperscript{3}, Francois Malrait\textsuperscript{2}, and Jean-Christophe Pesquet\textsuperscript{1} \\
+  \{sagar.verma, jean-christophe.pesquet\}@centralesupelec.fr, marc.castella@telecom-sudparis.eu, \\
+  \{sagar.verma, nicolas.henwood, francois.malrait\}@se.com
   }
   % University logo
   {
@@ -336,18 +340,27 @@
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \headerbox{Modeling Complex Dynamics}{name=abstract,column=0,row=0,span=1}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- Electrical motor dynamics modeling relies on physics-based approach. Dynamics are dependent on several physical quantities and operating conditions. Sensors and estimators used for measuring these quantities comes with inherent noise. This makes controller design and monitoring a challenging problem.
+ \begin{itemize}
+  \item Traditionally, electrical motor dynamics modeling relies on physics-based approach.
+  \item Dynamics are dependent on several physical quantities and operating conditions.
+  \item Sensors and estimators used for measuring these quantities come with inherent noise.
+  \item This makes controller design and fault monitoring challenging problems.
+  \end{itemize}
    }
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \headerbox{Problem Statement}{name=contributions,column=0,below=abstract}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  We explore the feasibility of modeling the dynamics of an electrical motor by following a data-driven approach, which uses only its inputs and outputs and does not make any assumption on its internal behaviour.
+  \begin{itemize}
+    \item We explore the feasibility of modeling the dynamics of an electrical motor by following a data-driven approach.
+    \item We focus on modeling the relationship between input and output quantities of an induction motor.
+  \end{itemize}
 
+  \vspace{-2.5em}
 
      \begin{center}
         \begin{tabular}{c c}
-         \includegraphics[scale=0.25]{sim} &
-          \includegraphics[scale=0.25]{lm45_torquesteps} \\
+         \includegraphics[scale=0.26]{sim} &
+          \includegraphics[scale=0.26]{lm45_torquesteps} \\
          \textbf{Simulated sample} &
          \textbf{Real world sample} \\
          \end{tabular}
@@ -358,27 +371,30 @@
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \headerbox{Related Work}{name=relatedwork,column=0,below=contributions, span=1}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{small}
    \begin{itemize}
     \item Physics of electrical motors and controller design \cite{Sylvester1987,Siskind1978cpts}.
     % \item Urban Change Detection in SAR Images by Interactive Learning \cite{saux2013}.
     \item State space model of an induction motor \cite{jadot2009induct}.
     \item Electrical motor dynamics modeling using analytical mechanics \cite{jebai2014cdc}.
-    \item Competetive performance of CNNs on sequential tasks \cite{bai2018arxiv}.
+    \item Competitive performance of CNNs on sequential tasks \cite{bai2018arxiv}.
     \item Independent Recurrent Neural Network \cite{li2018indrnn}.
    \end{itemize}
-
+   \end{small}
  }
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \headerbox{Dataset}{name=dataset,column=0,below=relatedwork, span=1}{
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{small}
    \begin{itemize}
       \item 4 kW induction motor
       \item Acquisition rate: 250 Hz
-      \item Seven quantities $i_d, i_q, u_d, u_q, \omega_r, \omega_s, \tau_{em}$
+      \item 7 quantities: $i_d, i_q, u_d, u_q, \omega_r, \omega_s, \tau_{em}$
       \item Simulated data: 100 hours, training: 70\% and validation: 30\%
       \item Raw data: 1207 seconds, no $\omega_s$, 10 operating conditions, training: 20\%, and testing: 80\%
    \end{itemize}
+   \end{small}
  }
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -434,7 +450,7 @@
 
        \end{tabular}
        \\
-       Comparison of simulated and fine-tuned model using SMAPE vs Signal Complexity graph. \\
+       Comparison of simulated and fine-tuned model using SMAPE vs Signal Complexity(Total Variation) graph. \\
        \vspace{0.5em}
 
 
@@ -443,69 +459,47 @@
       \stackunder[2.5pt]{\includegraphics[scale=0.25]{res_sim_curr2.pdf}}{(b) Current $i_q$} &
       \stackunder[2.5pt]{\includegraphics[scale=0.25]{res_sim_torque.pdf}}{(c) Torque $\tau_{em}$}
     \end{tabular}
-      Predicted result of one of the experiments from test set.
+      Predicted result of one of the experiments from the test set.
 
     \end{center}
  }
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \headerbox{DiagRNN and TV-Weight MSE}{name=eqns,column=3,row=0}{
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \begin{center}
- \fboxsep0pt
- \colorbox{light-gray2}{\begin{minipage}{8cm}
-
-\begin{small}
-\begin{equation}
-    h_t = \text{tanh}(w \odot x_t + u \odot h_{t-1} + b)
-\end{equation}
-where $w \in \mathbb{R}^M$, $u \in \mathbb{R}^M$, and $b \in \mathbb{R}^M$ are input weights.
-\end{small}
-\end{minipage}}
-\end{center}
-
- \vspace{-1.5em}
-
- \begin{center}
- \fboxsep0pt
- \colorbox{light-gray1}{\begin{minipage}{8cm}
- \begin{small}
- \begin{equation}
- \mathcal{L}_{\text{TV-WeightMSE}} = \frac{1}{N}\sum_{i=1}^{N}\sum_{t=1}^{T-1} |y^i_t - y^i_{t+1}| \frac{1}{T}\sum^{T}_{t=1}(y^i_t - \hat{y^i_t})^2
-\end{equation}
-where $y^i_t$ and $\hat{y^i_t}$ are the values of output and predicted sample $i$ at time-step $t$, respectively. $N$ is the number of training samples where each sample is of duration $T$.
-\end{small}
-\end{minipage}}
-\end{center}
- \vspace{-1.5em}
-   }
-
-
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \headerbox{Contributions}{name=contrib,column=3,row=0,below=eqns}{
+    \headerbox{Contributions}{name=contrib,column=3,row=0}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           \begin{center}
   \centering
-  \begin{small}
   \begin{itemize}
-    \item New Encoder-Decoder architecture to learn time-series relationship between different electrical quantities.
-    \item Two datasets; a large dataset of simulated electrical motor operations and a small dataset of sensor data recorded from the real-world operations of electrical motors.
-    \item A novel loss function that uses fast variations present in the electrical motor signals to avoid model bias.
+    \item New \textit{Encoder-Decoder architecture} with \textit{diagonalized recurrent skip connection} to effectively learn time-series relationship between different electrical quantities.
+      \begin{small}
+      \begin{align*}
+          h_t = \text{tanh}(w \odot x_t + u \odot h_{t-1} + b)
+      \end{align*}
+      where $w \in \mathbb{R}^M$, $u \in \mathbb{R}^M$, and $b \in \mathbb{R}^M$ are input weights.
+      \end{small}
+    \item A novel \textit{loss function} that uses fast variations present in the electrical motor signals to avoid model bias.
+    \begin{small}
+    \begin{align*}
+     \mathcal{L}_{\tiny{\text{TV-WeightMSE}}} = \frac{1}{N}\sum_{i=1}^{N}\sum_{t=1}^{T-1} |y^i_t - y^i_{t+1}| \frac{1}{T}\sum^{T}_{t=1}(y^i_t - \hat{y^i_t})^2
+    \end{align*}
+    where $y^i_t$ and $\hat{y^i_t}$ are the values of output and predicted sample $i$ at time-step $t$, respectively. $N$ is the number of training samples, where each sample is of duration $T$.
+    \end{small}
+    \item \textit{Two datasets}; a large dataset of simulated electrical motor operations and a small dataset of sensor data recorded from the real-world operations of electrical motors.
     % \item We analyse the capability of the proposed method by using a new analysis technique and we demonstrate the transfer learning capability of our approach.
-\end{itemize}
-  \end{small}
+    \end{itemize}
+
   \end{center}
-\vspace{-2.5em}
+
 \begin{center}
 \fboxsep0pt
-\colorbox{light-gray1}{\begin{minipage}{8cm}
+\colorbox{light-gray1}{\begin{minipage}{6.2cm}
 \qrcode{qr.png}{smartphone.png}{
-\textbf{Take a picture} to
-\\download the full paper
+Visit project page for\\
+full paper, code, and dataset
 }
 \end{minipage}}
 \end{center}
-\vspace{-1.5em}
+
     }
 
 
@@ -534,11 +528,18 @@ where $y^i_t$ and $\hat{y^i_t}$ are the values of output and predicted sample $i
     }
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \headerbox{Acknowledgement}{name=ack,column=3,below=references,above=bottom}{
+      \headerbox{Affiliations}{name=ack,column=3,below=references,above=bottom}{
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \tiny This work has been done at Universit\'e Paris-Saclay, CentraleSup\'elec, Inria, Centre de Vision Num\'erique, 91190, Gif-sur-Yvette, France in collaboration with Schneider Toshiba Inverter Europe, 33 Rue Andr\'e Blanchet, 27120 Pacy-sur-Eure.
 
-    Contact: \textbf{*sagar.verma@centralesupelec.fr}
+
+    \begin{tiny}
+    {\raggedleft
+      \textsuperscript{1} Universit\'{e} Paris-Saclay, CentraleSup\'{e}lec, Inria, Centre de Vision Num\'{e}rique, 91190, Gif-sur-Yvette, France \\
+      \textsuperscript{2} Schneider Toshiba Inverter Europe, 33, Rue Andr\'e Blanchet, 27120, Pacy-sur-Eure, France \\
+      \textsuperscript{3} Samovar, CNRS, T\'{e}l\'{e}com SudParis, Institut Polytechnique de Paris, \\
+            9, Rue Charles Fourier, 91011, Evry Cedex, France \\
+    }
+    \end{tiny}
 
     }
 
