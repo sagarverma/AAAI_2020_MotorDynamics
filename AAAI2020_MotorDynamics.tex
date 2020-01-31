@@ -471,19 +471,25 @@
   \centering
   \begin{itemize}
     \item New \textit{Encoder-Decoder architecture} with \textit{diagonalized recurrent skip connection} to effectively learn time-series relationship between different electrical quantities.
-      \begin{small}
+      \begin{footnotesize}
       \begin{align*}
           h_t = \text{tanh}(w \odot x_t + u \odot h_{t-1} + b)
       \end{align*}
+      \end{footnotesize}
+      \begin{small}
       where $w \in \mathbb{R}^M$, $u \in \mathbb{R}^M$, and $b \in \mathbb{R}^M$ are input weights.
       \end{small}
+
     \item A novel \textit{loss function} that uses fast variations present in the electrical motor signals to avoid model bias.
-    \begin{small}
+    \begin{footnotesize}
     \begin{align*}
-     \mathcal{L}_{\tiny{\text{TV-WeightMSE}}} = \frac{1}{N}\sum_{i=1}^{N}\sum_{t=1}^{T-1} |y^i_t - y^i_{t+1}| \frac{1}{T}\sum^{T}_{t=1}(y^i_t - \hat{y^i_t})^2
+     \mathcal{L}_{\tiny{\text{TV-MSE}}} = \frac{1}{N}\sum_{i=1}^{N}\underbrace{\left(\sum_{t=1}^{T-1} |y^i_t - y^i_{t+1}|\right)}_\textrm{Total Variation} \overbrace{\left(\frac{1}{T}\sum^{T}_{t=1}(y^i_t - \hat{y^i_t})^2 \right)}^\textrm{MSE}
     \end{align*}
+    \end{footnotesize}
+    \begin{small}
     where $y^i_t$ and $\hat{y^i_t}$ are the values of output and predicted sample $i$ at time-step $t$, respectively. $N$ is the number of training samples, where each sample is of duration $T$.
     \end{small}
+
     \item \textit{Two datasets}; a large dataset of simulated electrical motor operations and a small dataset of sensor data recorded from the real-world operations of electrical motors.
     % \item We analyse the capability of the proposed method by using a new analysis technique and we demonstrate the transfer learning capability of our approach.
     \end{itemize}
