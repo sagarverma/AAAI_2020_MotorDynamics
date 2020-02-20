@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.4)  31 JAN 2020 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.4)  20 FEB 2020 15:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1061,52 +1061,46 @@ Package pdftex.def Info: images/encoder_decoder.pdf  used on input line 408.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-<images/tv_vs_mse_sc_smape_curr1.pdf, id=37, 543.76024pt x 331.9141pt>
-File: images/tv_vs_mse_sc_smape_curr1.pdf Graphic file (type pdf)
-<use images/tv_vs_mse_sc_smape_curr1.pdf>
-Package pdftex.def Info: images/tv_vs_mse_sc_smape_curr1.pdf  used on input lin
-e 465.
-(pdftex.def)             Requested size: 125.06221pt x 76.33862pt.
-File: images/tv_vs_mse_sc_smape_curr1.pdf Graphic file (type pdf)
-<use images/tv_vs_mse_sc_smape_curr1.pdf>
-Package pdftex.def Info: images/tv_vs_mse_sc_smape_curr1.pdf  used on input lin
-e 465.
-(pdftex.def)             Requested size: 125.06221pt x 76.33862pt.
-<images/tv_mse_legend.pdf, id=38, 177.0615pt x 39.7485pt>
-File: images/tv_mse_legend.pdf Graphic file (type pdf)
-<use images/tv_mse_legend.pdf>
-Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 465.
-(pdftex.def)             Requested size: 61.97244pt x 13.91217pt.
-<images/tv_vs_mse_sc_smape_curr2.pdf, id=39, 537.50145pt x 331.9141pt>
-File: images/tv_vs_mse_sc_smape_curr2.pdf Graphic file (type pdf)
-<use images/tv_vs_mse_sc_smape_curr2.pdf>
-Package pdftex.def Info: images/tv_vs_mse_sc_smape_curr2.pdf  used on input lin
-e 465.
-(pdftex.def)             Requested size: 123.62273pt x 76.33862pt.
-File: images/tv_vs_mse_sc_smape_curr2.pdf Graphic file (type pdf)
-<use images/tv_vs_mse_sc_smape_curr2.pdf>
-Package pdftex.def Info: images/tv_vs_mse_sc_smape_curr2.pdf  used on input lin
-e 465.
-(pdftex.def)             Requested size: 123.62273pt x 76.33862pt.
-File: images/tv_mse_legend.pdf Graphic file (type pdf)
-<use images/tv_mse_legend.pdf>
-Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 465.
-(pdftex.def)             Requested size: 61.97244pt x 13.91217pt.
-<images/tv_vs_mse_sc_smape_torque.pdf, id=40, 547.43687pt x 331.9141pt>
-File: images/tv_vs_mse_sc_smape_torque.pdf Graphic file (type pdf)
-<use images/tv_vs_mse_sc_smape_torque.pdf>
-Package pdftex.def Info: images/tv_vs_mse_sc_smape_torque.pdf  used on input li
-ne 465.
-(pdftex.def)             Requested size: 125.90782pt x 76.33862pt.
-File: images/tv_vs_mse_sc_smape_torque.pdf Graphic file (type pdf)
-<use images/tv_vs_mse_sc_smape_torque.pdf>
-Package pdftex.def Info: images/tv_vs_mse_sc_smape_torque.pdf  used on input li
-ne 465.
-(pdftex.def)             Requested size: 125.90782pt x 76.33862pt.
-File: images/tv_mse_legend.pdf Graphic file (type pdf)
-<use images/tv_mse_legend.pdf>
-Package pdftex.def Info: images/tv_mse_legend.pdf  used on input line 465.
-(pdftex.def)             Requested size: 61.97244pt x 13.91217pt.
+<images/sc_smape_curr1.pdf, id=37, 547.41452pt x 331.9141pt>
+File: images/sc_smape_curr1.pdf Graphic file (type pdf)
+<use images/sc_smape_curr1.pdf>
+Package pdftex.def Info: images/sc_smape_curr1.pdf  used on input line 465.
+(pdftex.def)             Requested size: 125.90268pt x 76.33862pt.
+File: images/sc_smape_curr1.pdf Graphic file (type pdf)
+<use images/sc_smape_curr1.pdf>
+Package pdftex.def Info: images/sc_smape_curr1.pdf  used on input line 465.
+(pdftex.def)             Requested size: 125.90268pt x 76.33862pt.
+<images/legend.pdf, id=38, 113.4639pt x 39.7485pt>
+File: images/legend.pdf Graphic file (type pdf)
+<use images/legend.pdf>
+Package pdftex.def Info: images/legend.pdf  used on input line 465.
+(pdftex.def)             Requested size: 39.71295pt x 13.91217pt.
+<images/sc_smape_curr2.pdf, id=39, 547.41452pt x 331.9141pt>
+File: images/sc_smape_curr2.pdf Graphic file (type pdf)
+<use images/sc_smape_curr2.pdf>
+Package pdftex.def Info: images/sc_smape_curr2.pdf  used on input line 465.
+(pdftex.def)             Requested size: 125.90268pt x 76.33862pt.
+File: images/sc_smape_curr2.pdf Graphic file (type pdf)
+<use images/sc_smape_curr2.pdf>
+Package pdftex.def Info: images/sc_smape_curr2.pdf  used on input line 465.
+(pdftex.def)             Requested size: 125.90268pt x 76.33862pt.
+File: images/legend.pdf Graphic file (type pdf)
+<use images/legend.pdf>
+Package pdftex.def Info: images/legend.pdf  used on input line 465.
+(pdftex.def)             Requested size: 39.71295pt x 13.91217pt.
+<images/sc_smape_torque.pdf, id=40, 533.86389pt x 329.9066pt>
+File: images/sc_smape_torque.pdf Graphic file (type pdf)
+<use images/sc_smape_torque.pdf>
+Package pdftex.def Info: images/sc_smape_torque.pdf  used on input line 465.
+(pdftex.def)             Requested size: 122.7861pt x 75.8769pt.
+File: images/sc_smape_torque.pdf Graphic file (type pdf)
+<use images/sc_smape_torque.pdf>
+Package pdftex.def Info: images/sc_smape_torque.pdf  used on input line 465.
+(pdftex.def)             Requested size: 122.7861pt x 75.8769pt.
+File: images/legend.pdf Graphic file (type pdf)
+<use images/legend.pdf>
+Package pdftex.def Info: images/legend.pdf  used on input line 465.
+(pdftex.def)             Requested size: 39.71295pt x 13.91217pt.
 <images/res_sim_curr1.pdf, id=41, 494.10535pt x 314.56897pt>
 File: images/res_sim_curr1.pdf Graphic file (type pdf)
 <use images/res_sim_curr1.pdf>
@@ -1184,22 +1178,22 @@ ultiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./images/encoder_decoder.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
-> <./images/tv_vs_mse_sc_smape_curr1.pdf
+> <./images/sc_smape_curr1.pdf
 
-pdfTeX warning: pdflatex (file ./images/tv_vs_mse_sc_smape_curr1.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./images/tv_mse_legend.pdf
+pdfTeX warning: pdflatex (file ./images/sc_smape_curr1.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./images/legend.pdf
 
-pdfTeX warning: pdflatex (file ./images/tv_mse_legend.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
-> <./images/tv_vs_mse_sc_smape_curr2.pdf
+pdfTeX warning: pdflatex (file ./images/legend.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+> <./images/sc_smape_curr2.pdf
 
-pdfTeX warning: pdflatex (file ./images/tv_vs_mse_sc_smape_curr2.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./images/tv_vs_mse_sc_smape_torque.pdf
+pdfTeX warning: pdflatex (file ./images/sc_smape_curr2.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./images/sc_smape_torque.pdf
 
-pdfTeX warning: pdflatex (file ./images/tv_vs_mse_sc_smape_torque.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/sc_smape_torque.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
 > <./images/res_sim_curr1.pdf
 
 pdfTeX warning: pdflatex (file ./images/res_sim_curr1.pdf): PDF inclusion: mult
@@ -1216,7 +1210,7 @@ tiple pdfs with page group included in a single page
  
 Here is how much of TeX's memory you used:
  19862 strings out of 494923
- 382680 string characters out of 6180743
+ 382495 string characters out of 6180743
  793400 words of memory out of 5000000
  22682 multiletter control sequences out of 15000+600000
  50603 words of font info for 113 fonts, out of 8000000 for 9000
@@ -1245,9 +1239,9 @@ sfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on AAAI2020_MotorDynamics.pdf (1 page, 2415816 bytes).
+Output written on AAAI2020_MotorDynamics.pdf (1 page, 2417472 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
+ 519 PDF objects out of 1000 (max. 8388607)
  191 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  189 words of extra memory for PDF output out of 10000 (max. 10000000)
